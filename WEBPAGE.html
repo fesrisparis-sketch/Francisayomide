@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Option Community | Home</title>
+  <style>
+    /* Global Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #f3f3f3, #dfe9f3);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    header {
+      background: linear-gradient(90deg, #4a00e0, #8e2de2);
+      padding: 1rem 2rem;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .nav-links a:hover {
+      color: #ffd700;
+    }
+
+    /* Hero */
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90vh;
+      text-align: center;
+      color: #fff;
+      background: linear-gradient(to right, #8e2de2, #4a00e0);
+    }
+    .hero-content h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      animation: fadeIn 2s ease forwards;
+    }
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      animation: fadeIn 3s ease forwards;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      background: #ffd700;
+      color: #333;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+      animation: bounce 2s infinite;
+    }
+    .btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* Gallery */
+    .gallery {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .gallery h2 {
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .gallery-grid img,
+    .gallery-grid video {
+      width: 100%;
+      border-radius: 15px;
+      transition: transform 0.5s ease;
+    }
+    .gallery-grid img:hover,
+    .gallery-grid video:hover {
+      animation: zoomIn 0.8s forwards;
+    }
+
+    /* Footer */
+    footer {
+      background: linear-gradient(90deg, #4a00e0, #8e2de2);
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(1); }
+      to { transform: scale(1.1); }
+    }
+
+    /* Responsive */
+    @media(max-width:768px) {
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+      .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">New Option</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html#gallery">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to <span>New Option Community</span></h1>
+      <p>A stunning place where fashion, creativity, and opportunities meet.<br>
+         We are more than a brand — we are a movement for dreamers and doers.</p>
+      <a href="contact.html" class="btn">Join Us</a>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="gallery">
+    <h2>Our Creative Gallery</h2>
+    <p>Discover our world of style, design, and innovation — where every piece tells a story.</p>
+    <div class="gallery-grid">
+      <img src="my picture.jpg" alt="Fashion sample">
+      <img src="coloring.png" alt="Design sample">
+      <video controls>
+        <source src="my video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 New Option Community. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

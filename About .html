@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Option Community | About</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #f3f3f3, #e6e9f0);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    header {
+      background: linear-gradient(90deg, #4a00e0, #8e2de2);
+      padding: 1rem 2rem;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .nav-links a:hover {
+      color: #ffd700;
+    }
+
+    /* About Section */
+    .about {
+      padding: 4rem 2rem;
+      text-align: center;
+      background: linear-gradient(to right, #8e2de2, #4a00e0);
+      color: #fff;
+      animation: fadeIn 2s ease forwards;
+    }
+    .about h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .about p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      background: #ffd700;
+      color: #333;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+      animation: slideIn 2s ease;
+    }
+    .btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* Footer */
+    footer {
+      background: linear-gradient(90deg, #4a00e0, #8e2de2);
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes slideIn {
+      from { transform: translateX(-100px); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    /* Responsive */
+    @media(max-width:768px) {
+      .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .about h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">New Option</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html#gallery">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about">
+    <h2>About New Option Community</h2>
+    <p>
+      At <b>NEW OPTION</b>, we believe clothing is more than fabric – it’s an expression of identity, confidence, and lifestyle. 
+      But our mission goes far beyond fashion. We are building a community where creativity, business opportunities, 
+      and cultural expression thrive together.
+    </p>
+    <p>
+      Our vision is to blend timeless style with modern comfort while creating safe and supportive spaces for entrepreneurs, 
+      artists, and dreamers. Whether it’s through fashion, design, digital trade, or collaborative projects, 
+      we provide a platform for individuals to grow, connect, and succeed.
+    </p>
+    <p>
+      <b>New Option Community</b> is not just a brand — it’s a movement for those who want to turn passion into progress, 
+      and style into a statement.
+    </p>
+    <a href="services.html" class="btn">Explore Our Services</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 New Option Community. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
